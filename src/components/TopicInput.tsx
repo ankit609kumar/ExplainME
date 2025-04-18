@@ -17,15 +17,15 @@ export function TopicInput() {
   };
 
   return (
-    <div className="w-full glass-card rounded-xl p-6">
-      <h2 className="text-xl font-semibold mb-4 text-white">Explain Any Topic</h2>
+    <div className="w-full bg-white rounded-xl p-6 shadow-lg">
+      <h2 className="text-xl font-semibold mb-4 text-gray-800">Explain Any Topic</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="relative">
           <Input
             placeholder="Enter a topic you want to learn about..."
             value={topic}
             onChange={(e) => setTopic(e.target.value)}
-            className="pl-4 pr-12 py-6 bg-explainify-darker border-explainify-purple/30 focus:border-explainify-purple"
+            className="pl-4 pr-12 py-6 bg-gray-50 border-gray-200 text-gray-900 focus:border-explainify-purple focus:ring-explainify-purple"
           />
           <Button
             type="button"
@@ -39,7 +39,7 @@ export function TopicInput() {
         </div>
         
         <div>
-          <p className="text-sm font-medium mb-2 text-white/80">Explanation Level</p>
+          <p className="text-sm font-medium mb-2 text-gray-700">Explanation Level</p>
           <RadioGroup
             defaultValue="high-school"
             value={level}
@@ -54,9 +54,9 @@ export function TopicInput() {
               />
               <Label
                 htmlFor="level-1"
-                className="flex flex-col items-center justify-between rounded-md border border-white/10 bg-explainify-darker p-4 hover:bg-explainify-dark/80 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
+                className="flex flex-col items-center justify-between rounded-md border border-gray-200 bg-white p-4 hover:bg-gray-50 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
               >
-                <span className="text-sm font-medium">Like I'm 5</span>
+                <span className="text-sm font-medium text-gray-900">Like I'm 5</span>
               </Label>
             </div>
             
@@ -68,9 +68,9 @@ export function TopicInput() {
               />
               <Label
                 htmlFor="level-2"
-                className="flex flex-col items-center justify-between rounded-md border border-white/10 bg-explainify-darker p-4 hover:bg-explainify-dark/80 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
+                className="flex flex-col items-center justify-between rounded-md border border-gray-200 bg-white p-4 hover:bg-gray-50 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
               >
-                <span className="text-sm font-medium">High School</span>
+                <span className="text-sm font-medium text-gray-900">High School</span>
               </Label>
             </div>
             
@@ -82,9 +82,9 @@ export function TopicInput() {
               />
               <Label
                 htmlFor="level-3"
-                className="flex flex-col items-center justify-between rounded-md border border-white/10 bg-explainify-darker p-4 hover:bg-explainify-dark/80 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
+                className="flex flex-col items-center justify-between rounded-md border border-gray-200 bg-white p-4 hover:bg-gray-50 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
               >
-                <span className="text-sm font-medium">Developer</span>
+                <span className="text-sm font-medium text-gray-900">Developer</span>
               </Label>
             </div>
             
@@ -96,9 +96,9 @@ export function TopicInput() {
               />
               <Label
                 htmlFor="level-4"
-                className="flex flex-col items-center justify-between rounded-md border border-white/10 bg-explainify-darker p-4 hover:bg-explainify-dark/80 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
+                className="flex flex-col items-center justify-between rounded-md border border-gray-200 bg-white p-4 hover:bg-gray-50 hover:text-explainify-purple peer-data-[state=checked]:border-explainify-purple peer-data-[state=checked]:text-explainify-purple"
               >
-                <span className="text-sm font-medium">Expert</span>
+                <span className="text-sm font-medium text-gray-900">Expert</span>
               </Label>
             </div>
           </RadioGroup>
