@@ -96,6 +96,17 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-explainify-dark text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 shadow-lg;
+  }
+  
+  .purple-glow {
+    @apply shadow-[0_0_15px_rgba(155,135,245,0.5)];
   }
 }

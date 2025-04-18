@@ -17,6 +17,9 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			sans: ['Inter', 'sans-serif'],
+		},
 		extend: {
 			colors: {
 				border: 'hsl(var(--border))',
@@ -27,6 +30,15 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
+				},
+				explainify: {
+					dark: '#1A1F2C',
+					darker: '#151821',
+					purple: '#9b87f5',
+					'purple-dark': '#6E59A5',
+					accent: '#7E69AB',
+					'accent-light': '#A99AD6',
+					background: '#222426',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
