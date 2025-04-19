@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Eye, EyeOff, LogIn } from "lucide-react";
+import { Eye, EyeOff, LogIn, BookOpen, Youtube, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -28,6 +28,34 @@ export default function Login() {
             Explainify
           </h1>
           <p className="text-white/60">Sign in to your account</p>
+        </div>
+
+        {/* Quick Access Buttons */}
+        <div className="flex justify-center gap-4 mb-8">
+          <Button
+            variant="outline"
+            onClick={() => navigate("/recommendations")}
+            className="bg-white/5 border-white/10 text-white hover:bg-white/10"
+          >
+            <BookOpen className="h-4 w-4 mr-2" />
+            Recommendations
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() => navigate("/youtube")}
+            className="bg-white/5 border-white/10 text-white hover:bg-white/10"
+          >
+            <Youtube className="h-4 w-4 mr-2" />
+            YouTube Links
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() => navigate("/challenges")}
+            className="bg-white/5 border-white/10 text-white hover:bg-white/10"
+          >
+            <Award className="h-4 w-4 mr-2" />
+            Challenges
+          </Button>
         </div>
 
         {/* Login Form */}
